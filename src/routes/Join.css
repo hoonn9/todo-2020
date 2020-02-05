@@ -12,12 +12,24 @@
   display: block;
 }
 
-.join_box_id {
+.ps_box {
   display: block;
   position: relative;
   width: 100%;
   height: 51px;
   border: solid 1px #dadada;
+  padding: 10px 14px 10px 14px;
+  background: #fff;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.ps_box_invalid {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 51px;
+  border: solid 1px #e36209;
   padding: 10px 14px 10px 14px;
   background: #fff;
   box-sizing: border-box;
@@ -33,4 +45,39 @@
   border: none;
   background: #fff;
   font-size: 15px;
+}
+
+.birth_wrap,
+.name_wrap {
+  display: table;
+  width: 100%;
+}
+
+.birth_dd,
+.birth_mm,
+.birth_yy {
+  display: table-cell;
+  table-layout: fixed;
+  width: 147px;
+  vertical-align: middle;
+  *display: block;
+  *float: left;
+}
+
+.sel {
+  width: 100%;
+  height: 29px;
+  padding: 7px 8px 6px 7px\9;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+  border: none;
+  border-radius: 0;
+  *height: auto;
+  *margin-top: 3px;
+  -webkit-appearance: none;
+}
+
+:root {
+  --text-color: 16px;
 }
